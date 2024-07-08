@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Budget App using html Css and Javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Budget Application</h2>
+      <div class="error_message">
+        <p>Please Enter Budget | Budget must be more than 0!</p>
+      </div>
+      <div class="budget_content">
+        <div class="ur_budget">
+          <form>
+            <label for="budget">Your Budget :</label>
+            <input
+              type="number"
+              placeholder="your Budget"
+              class="budget_input"
+            />
+            <button class="btn" id="btn_budget">Calculate</button>
+          </form>
+        </div>
+        <div class="ur_expenses">
+          <form>
+            <label for="expenses">Expenses details :</label>
+            <input
+              type="number"
+              placeholder="your expenses description"
+              class="expenses_input"
+            />
+            <input type="number" placeholder="amount" class="expenses_amount" />
+            <button class="btn" id="btn_expenses">Add expenses</button>
+          </form>
+        </div>
+      </div>
+      <!-- //===============================Card Starts here
+      =============================// -->
+      <ul class="cards">
+        <li>
+          <i class="bx bx-money"></i>
+          <span class="info">
+            <h3><span>$</span><span class="budget-card">7,379</span></h3>
+            <p>Budget</p>
+          </span>
+        </li>
+        <li>
+          <i class="bx bx-credit-card"></i>
+          <span class="info">
+            <h3><span>$</span><span class="expenses-card">9,379</span></h3>
+            <p>Expenses</p>
+          </span>
+        </li>
+        <li>
+          <i class="bx bx-dollar"></i>
+          <span class="info">
+            <h3><span>$</span><span class="balance-card">2,379</span></h3>
+            <p>Balance</p>
+          </span>
+        </li>
+      </ul>
+      <!-- //===============================Card ends here
+      ===============================// -->
+    </div>
+  </body>
+</html>
