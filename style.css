@@ -163,3 +163,54 @@ outline: none;
     font-weight: 600; */
     color: var(--dark);
 }
+
+/** cards end here */
+
+/** table start here */
+
+.tbl_content {
+    padding: 2rem;
+    background-color: var(--grey);
+    margin: 1rem 2rem;
+    border-radius: 5px;
+}
+.tbl_content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.tbl_tr_content{
+    display: grid;
+
+    list-style-type: none;
+    grid-template-columns: 1fr 50% 30% 2fr;
+    align-items: center;
+    background-color: var(--dark-grey);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.tbl_data {
+    overflow-y: auto;
+    height: 150px;
+}
+
+.tbl_tr_content button{
+    outline: none;
+    border: none;
+    columns: var(--light);
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-primary);
+}
+
+.tbl_tr_content button:active{
+    transform: scale(0.98);
+}
+
+.tbl_tr_content button:first-child{
+    background-color: var(--success);
+}
